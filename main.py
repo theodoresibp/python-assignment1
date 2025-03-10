@@ -25,7 +25,7 @@ with st.form(key='add_task'):
         new_task = pd.DataFrame([{'task': task_input, 'status': 'Not Complete'}])
         st.session_state.tasks = pd.concat([st.session_state.tasks, new_task], ignore_index=True)
         save_to_csv()
-        st.success(f'Task "{task_input}" succesfuly added!')
+        st.success(f'Task "{task_input}" succesfully added!')
 
 
 st.write('### My todo List')
